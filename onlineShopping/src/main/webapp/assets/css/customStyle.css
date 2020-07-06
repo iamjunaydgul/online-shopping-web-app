@@ -1,0 +1,25 @@
+html {
+	height: 100%;
+}
+
+body {
+	padding-top: 70px;
+	height: 100%;
+}
+
+/* custom styling start here */
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.content {
+	padding-bottom: 120px; /* height of footer */
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	height: 1%;
+	width: 100%;
+}
