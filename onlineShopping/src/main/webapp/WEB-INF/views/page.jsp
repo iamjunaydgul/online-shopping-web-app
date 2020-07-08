@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <spring:url var="css" value="/resources/css" />
@@ -21,7 +21,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping- ${title }</title>
+<title>Moblify- ${title }</title>
 <script>
 	window.menu = '${title}';
 </script>
@@ -29,7 +29,7 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 <!-- Theme -->
-<link href="${css}/bootstrap-yeti-theme.min.css" rel="stylesheet">
+<link href="${css}/bootstrap-lux-theme.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/customStyle.css" rel="stylesheet">
@@ -57,6 +57,10 @@
 			<c:if test="${userClickContact== true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			<!-- when user goto view products -->
+			<c:if test="${userClickAllProducts== true or userClickCategoryProducts== true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
 		</div>
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
@@ -64,7 +68,7 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
-		<script src="${js}/myapp.js"></script>
+		<script src="${js}/moblifyapp.js"></script>
 	</div>
 </body>
 

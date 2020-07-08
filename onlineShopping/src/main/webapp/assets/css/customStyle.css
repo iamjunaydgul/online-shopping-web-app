@@ -20,6 +20,29 @@ body {
 .footer {
 	position: absolute;
 	bottom: 0px;
-	height: 1%;
+	height: 0;
 	width: 100%;
 }
+
+.bg-nav {
+	background: #343a40;
+}
+
+.footer-padding {
+	padding-bottom: 2rem;
+	padding-top: 1rem;
+}
+
+.colListProduct {
+	flex-basis: 0;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	min-width: 0;
+	max-width: 25%;
+}
+.text-center{
+	text-align: center;
+	text-transform: none;
+}
+

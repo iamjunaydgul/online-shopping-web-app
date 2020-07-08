@@ -17,12 +17,16 @@
 	</properties>
 
 	<dependencies>
-		<!-- jstl -->
+		<!-- Linking backend project -->
 		<dependency>
+			<groupId>com.iamjunaydgul</groupId>
+			<artifactId>onlineShoppingBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		<!-- jstl -->
+		</dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
-			<version>${jstl.version}</version>
-		</dependency>
+			<version>1.2</version>
 		<!-- spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
